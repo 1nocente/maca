@@ -9,6 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Readex+Pro:wght@400;700&display=swap" rel="stylesheet">
      <link rel="icon" href="./IMG/IconApple.png" type="image/x-icon">
      <link rel="stylesheet" href="./style.css">
+     <script src="scripts/main.js"></script>
     <title>Maçã !no¢</title>
 </head>
 <body>
@@ -64,7 +65,19 @@
           <div class="img-direita">
             <img src="./IMG/maca3VG.png" alt="Maçã pintada por Van Gogh" class="img-direita">
           </div>
+
       </main>
+
+      <button id="meuBotao">Maçã?</button>
+      <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          const meuBotao = document.getElementById("meuBotao");
+          meuBotao.addEventListener("click", function() {
+            alert("maçã é a fruta mais daora");
+          });
+        });
+      </script>
+
 
       <footer>
        <span> Eu gosto de maçãs </span>
