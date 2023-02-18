@@ -14,27 +14,50 @@ header {
     background-color: #ff3535;
     height: 80px;
     padding: 0 20px;
+    position: relative;
+    height: 90px; /* altura da área do cabeçalho */
   }
   .maçã1 {
     height: 70px;
     margin-right: 24px;
+    position: absolute;
+  top: 50%; /* alinha a parte superior da imagem com o centro vertical da div */
+  left: 46%; /* alinha a parte esquerda da imagem com o centro horizontal da div */
+  transform: translate(-50%, -50%);
   } 
+  .maçã1:hover{
+    transform: scale(2);
+    transition: transform 0.5s ease-in-out;
+  }
+
+ 
 
   span {
     font-size: 24px;
     margin: 0;
+    left: 54%;
   }
 
   h1 {
     margin: 0;
     font-size: 24px;
     color: aliceblue;
+    left: 52%;
   }
   
   .maçã2 {
     height: 70px;
     margin-right: 24px;
     margin-left: 15px;
+    position: absolute;
+  top: 50%; /* alinha a parte superior da imagem com o centro vertical da div */
+  left: 53%; /* alinha a parte esquerda da imagem com o centro horizontal da div */
+  transform: translate(-50%, -50%);
+  }
+
+  .maçã2:hover{
+    transform: scale(-2);
+    transition: transform 0.5s ease-in-out;
   }
 
   main {
@@ -62,6 +85,11 @@ header {
     flex-grow: 1;
     width: calc(50% - 30px);
   }
+  .balao-fala1:hover{
+    transform: scale(1.12);
+    transition: transform 0.5s ease-in-out;
+  }
+
   
   .balao-fala1:before {
     content: "";
@@ -82,6 +110,12 @@ header {
   margin: 20px;
   width: calc(50% - 30px);
 }
+
+.balao-fala2:hover{
+  transform: scale(1.12);
+  transition: transform 0.5s ease-in-out;
+}
+
   
   .balao-fala2:before {
     content: "";
@@ -102,6 +136,11 @@ header {
   margin: 20px;
   flex-grow: 1;
   width: calc(50% - 30px);
+}
+
+.balao-fala3:hover{
+  transform: scale(1.12);
+  transition: transform 0.5s ease-in-out;
 }
   
   .balao-fala3:before {
@@ -155,7 +194,15 @@ footer span {
   cursor: pointer;
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 49%;
   transform: translate(-50%, -50%);
 }
+
+#meuBotao:hover {
+
+  transform: scale(4.5);
+  transition: transform 0.5s ease-in-out;
+
+}
+
 
