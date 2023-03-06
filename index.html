@@ -22,6 +22,7 @@
     <!-- Adicionando um título para a página -->
     <title>Maçã !no¢</title>
   </head>
+
   <body>
     <header>
       <img class="maçã1" src="./IMG/logomaca.png" alt="Logo da Maçã" />
@@ -36,6 +37,7 @@
     </header>
 
     <main>
+      <!-- Adicionando uma seção principal para o conteúdo principal da página -->
       <div class="balao-fala1">
         <p>
           Quando as maçãs estão prontas elas se desapegam da vista privilegiada
@@ -74,9 +76,9 @@
           Entre a nossa geração é o símbolo da paixão <br />
           Para mim, é apenas uma maçã...
         </p>
-
       </div>
 
+      <!-- Adicionando uma imagem à direita -->
       <div class="img-direita">
         <img
           src="./IMG/maca3VG.png"
@@ -85,19 +87,25 @@
         />
       </div>
     </main>
-
-    <button id="meuBotao">Maçã?</button>
+   <button id="meuBotao">Maçã?</button>
     <script>
+      // Espera o documento ser carregado antes de executar o código
       document.addEventListener('DOMContentLoaded', function () {
+        // Procura o botão com o id "meuBotao" no DOM e armazena em uma variável
         const meuBotao = document.getElementById('meuBotao');
+        // Adiciona um evento de clique ao botão para exibir uma mensagem de alerta
         meuBotao.addEventListener('click', function () {
-          alert('maçã é a fruta melhor fruta!');
+          alert('maçã é a melhor fruta!');
         });
       });
     </script>
-
     <footer>
       <span> Eu gosto de maçãs </span>
     </footer>
   </body>
 </html>
+
+
+
+
+
